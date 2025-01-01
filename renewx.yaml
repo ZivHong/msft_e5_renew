@@ -1,0 +1,9 @@
+services:
+  renewx:
+    image: renewx2:latest
+    container_name: renewx
+    ports:
+      - "1066:1066"
+    restart: unless-stopped
+    volumes:
+      - /home/ubuntu/renewx_data:/app/appdata
